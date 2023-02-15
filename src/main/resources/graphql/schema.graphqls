@@ -1,0 +1,24 @@
+type Player {
+  id: ID!
+  name: String
+  age: Int
+  club: String
+  nationality: String
+}
+
+input PlayerInput {
+  name: String!
+  age: Int
+  club: String
+  nationality: String
+}
+
+type Query{
+  getAllPlayers: [Player]
+  getPlayersByClub(club: String!): [Player]
+  getPlayerByName(name: String!): Player
+}
+
+type Mutation {
+  addPlayer(player: PlayerInput!): Player
+}
