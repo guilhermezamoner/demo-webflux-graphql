@@ -15,7 +15,7 @@ A server-side Kotlin application Demo
 ## ☕ how it works?
 ```
 # Clone this repository
-$ git clone https://github.com/
+$ git clone https://github.com/guilhermezamoner/demo-webflux-graphql.git
 
 # Run the app
 $  ./mvnw spring-boot:run
